@@ -1,0 +1,40 @@
+<html>
+<head>
+<script language="Javascript">
+function hideA()
+{
+
+    document.getElementById("A").style.visibility="hidden";
+    document.getElementById("B").style.visibility="visible";    
+
+}
+
+function hideB()
+{
+    document.getElementById("B").style.visibility="hidden";
+    document.getElementById("A").style.visibility="visible";
+
+}
+</script>
+</head>
+<body> 
+<input type="radio"  name="aorb" onClick="hideB()" checked>Salaried Employee
+<input type="radio"  name="aorb" onClick="hideA()">Own Business Employee
+<div style="position: absolute; left: 10px; top: 100px;" id="A"><br/>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    <label for="fname">Company Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Company Name.." required>
+    <label for="fname">Salary</label>
+    <input type="text" id="fname" name="firstname" placeholder="Salary.." required>
+</div>
+<div style="position: absolute; left: 10px; top: 100px; visibility:hidden" id="B"><br/>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    <label for="fname">Number of Employess</label>
+    <input type="text" id="fname" name="firstname" placeholder="Employess.." required>
+    <label for="fname">Company Turnover</label>
+    <input type="number" id="fname" name="firstname" placeholder="Turnover.." required>
+</div>
+</body>
+</html>
