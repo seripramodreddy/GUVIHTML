@@ -1,0 +1,82 @@
+<html>
+<style>
+    body{
+        background-color: black;
+        border:2px solid black;
+    }
+    h1{
+        background-color: red;
+        text-align: center;
+    }
+    .input-field{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid black;
+        outline: none;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        clear: both;
+    }
+    ::placeholder{
+        font-style: italic;
+    }
+    form{
+        width: 1000px;
+        background-color:white;
+        border:2px solid black;
+       
+    }
+</style>
+    <body>
+        <form>
+        <h1>
+            Yes! I want to subscribe to Mag-O-Zine</h1>
+        
+        <div class="left">
+            <input type="text" class="input-field" id="lname" name="lastname" placeholder="Firstname..">
+             <p>Firstname</p>
+        </div>
+          
+            <div class="left">
+                <input type="text" class="input-field" id="lname" name="lastname" placeholder="lastname..">
+                 <p>Lastname</p>
+        </div>
+        <div class="right">
+                 <input type="text" class="input-field" id="lname" name="lastname" placeholder="Address..">
+                 <p>Address</p> 
+        </div> 
+        <div class="left">
+                 <input type="text" class="input-field" id="lname" name="lastname" placeholder="City..">
+                 <p>City</p>
+                </div> 
+                <div class="left"> 
+                 <input type="text" class="input-field" id="lname" name="lastname" placeholder="State..">
+                 <p>State</p> 
+                </div>
+                 <div class="left">
+                 <input type="text" class="input-field" id="lname" name="lastname" placeholder="Zip..">
+                 <p>Zip</p> 
+                 </div>
+            <div class="right"></div>
+        <p>Subscribe for:
+        <input type="checkbox" id="tear" name="yer" value="year" checked>   
+        <label for="tear"> 1 year ($19.95)</label>
+        <input type="checkbox" id="yeaer" name="year2" value="year">
+        <label for="year2"> 2 year ($35.00)</label><br>
+        </p>
+        <p>Send me more information about:
+            <br>
+            <input type="checkbox" id="tear" name="yer" value="year" checked>
+            <label for="tear">Computer-zone</label><br>
+            <input type="checkbox" id="tear" name="yer" value="year">
+            <label for="tear"> Fishing-zone</label><br>
+            <input type="checkbox" id="yeaer" name="year2" value="year" checked>
+            <label for="year2"> Cat-o-zone</label><br>   
+        </p>
+        </form>
+    </body>
+</html>
